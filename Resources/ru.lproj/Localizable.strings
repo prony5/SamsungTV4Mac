@@ -1,0 +1,52 @@
+/* Sidebar */
+"TVs" = "Телевизоры";
+"Search Again" = "Искать снова";
+"Add by IP…" = "Добавить по IP…";
+"Searching for TVs…" = "Поиск телевизоров…";
+"No TVs Found" = "Телевизоры не найдены";
+"Turn on the TV and make sure it is on the same network, or add it by IP address." = "Включите телевизор и убедитесь, что он в той же сети, или добавьте его по IP-адресу.";
+"Remove" = "Удалить";
+
+/* Add TV sheet */
+"Add TV by IP Address" = "Добавить телевизор по IP-адресу";
+"You can find the IP address on the TV in Settings → General → Network → Network Status." = "IP-адрес можно посмотреть на телевизоре: Настройки → Общие → Сеть → Состояние сети.";
+"Add" = "Добавить";
+"Cancel" = "Отмена";
+
+/* Player */
+"Open Video…" = "Открыть видео…";
+"Drop a video file here" = "Перетащите сюда видеофайл";
+"Choose File…" = "Выбрать файл…";
+"Choose Another…" = "Выбрать другой…";
+"Analyzing file…" = "Анализ файла…";
+"Plays on the TV as is" = "Телевизор воспроизведёт как есть";
+"Will be converted for the TV" = "Будет сконвертирован для телевизора";
+"Video %@ → H.264" = "Видео %@ → H.264";
+"Audio %@ → AC3" = "Звук %@ → AC3";
+"Container %@ → MKV" = "Контейнер %@ → MKV";
+"Converting for the TV… %lld%%" = "Конвертация для телевизора… %lld%%";
+"Uses the hardware encoder; usually 50–100× faster than real time." = "Используется аппаратный кодировщик — обычно в 50–100 раз быстрее реального времени.";
+"Starting playback on the TV…" = "Запуск воспроизведения на телевизоре…";
+"Select a TV" = "Выберите телевизор";
+"Play on %@" = "Воспроизвести на %@";
+"Playing on %@" = "Воспроизводится на %@";
+"Paused on %@" = "Пауза на %@";
+"Loading on %@…" = "Загрузка на %@…";
+"Back 30 seconds" = "Назад на 30 секунд";
+"Forward 30 seconds" = "Вперёд на 30 секунд";
+"Play" = "Воспроизвести";
+"Pause" = "Пауза";
+"Stop" = "Стоп";
+"Converted files cache: %@" = "Кэш сконвертированных файлов: %@";
+"Clear" = "Очистить";
+"ffmpeg is not installed" = "ffmpeg не установлен";
+"Without it, files are sent to the TV as is and unsupported formats can't be converted. Install it with Homebrew:" = "Без него файлы отправляются на телевизор как есть, а неподдерживаемые форматы нельзя сконвертировать. Установите через Homebrew:";
+
+/* Errors */
+"%@ not found. Install it with: brew install ffmpeg" = "%@ не найден. Установите: brew install ffmpeg";
+"Could not read the file: %@" = "Не удалось прочитать файл: %@";
+"Conversion failed: %@" = "Ошибка конвертации: %@";
+"Could not determine this Mac's address on the TV's network." = "Не удалось определить адрес этого Mac в сети телевизора.";
+"The TV could not play this file (unsupported format?)." = "Телевизор не смог воспроизвести файл (неподдерживаемый формат?).";
+"The device is not a DLNA media renderer." = "Устройство не является DLNA-плеером.";
+"The device returned an invalid description." = "Устройство вернуло некорректное описание.";
