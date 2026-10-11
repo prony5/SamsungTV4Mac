@@ -61,7 +61,7 @@ cd SamsungTV4Mac
 ./scripts/test.sh         # запуск тестов
 ```
 
-`UNIVERSAL=1 ./build-dmg.sh` — универсальная сборка arm64 + x86_64 (нужен Xcode).
+`UNIVERSAL=1 ./build-dmg.sh` — универсальная сборка arm64 + x86_64.
 
 ## Решение проблем
 

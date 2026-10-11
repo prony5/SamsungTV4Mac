@@ -7,14 +7,13 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "SamsungTV4Mac",
-            path: "SamsungTV4Mac",
-            swiftSettings: [.swiftLanguageMode(.v5)]
+            path: "SamsungTV4Mac"
         ),
         .testTarget(
             name: "SamsungTV4MacTests",
             dependencies: ["SamsungTV4Mac"],
-            path: "Tests/SamsungTV4MacTests",
-            swiftSettings: [.swiftLanguageMode(.v5)]
+            path: "Tests/SamsungTV4MacTests"
         )
-    ]
+    ],
+    swiftLanguageModes: [.v5]
 )

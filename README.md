@@ -61,7 +61,7 @@ cd SamsungTV4Mac
 ./scripts/test.sh         # run the tests
 ```
 
-Use `UNIVERSAL=1 ./build-dmg.sh` for an arm64 + x86_64 build (requires Xcode).
+Use `UNIVERSAL=1 ./build-dmg.sh` for an arm64 + x86_64 build.
 
 ## Troubleshooting
 

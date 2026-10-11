@@ -1,6 +1,6 @@
 #!/bin/bash
 # Builds SamsungTV4Mac.app and a .dmg into .build/release.
-#   UNIVERSAL=1 ./build-dmg.sh   — arm64 + x86_64 (requires Xcode)
+#   UNIVERSAL=1 ./build-dmg.sh   — arm64 + x86_64
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -15,8 +15,14 @@ DMG_OUTPUT="$OUT_DIR/$APP_NAME-$VERSION.dmg"
 
 echo "==> Building $APP_NAME $VERSION..."
 if [[ "${UNIVERSAL:-0}" == "1" ]]; then
-    swift build -c release --arch arm64 --arch x86_64
-    BINARY="$(swift build -c release --arch arm64 --arch x86_64 --show-bin-path)/$APP_NAME"
+    # Build each architecture separately and merge with lipo (works without Xcode).
+    for ARCH in arm64 x86_64; do
+        swift build -c release --arch "$ARCH"
+    done
+    BINARY="$OUT_DIR/$APP_NAME-universal"
+    lipo -create -output "$BINARY" \
+        "$(swift build -c release --arch arm64 --show-bin-path)/$APP_NAME" \
+        "$(swift build -c release --arch x86_64 --show-bin-path)/$APP_NAME"
 else
     swift build -c release
     BINARY="$(swift build -c release --show-bin-path)/$APP_NAME"
